@@ -212,7 +212,7 @@ function respond() {
    }
     else if(request.text && botRegexDerr.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://opinionsandcoffee.files.wordpress.com/2014/12/gu30.jpg");
+    postMessage("/tony");
     this.res.end();
    } 
     else if(request.text && botRegexKerm.test(request.text)) {
