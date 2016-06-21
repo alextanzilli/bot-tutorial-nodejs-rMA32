@@ -292,7 +292,7 @@ function respond() {
     }     
       else if(request.text && botRegexEric.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://i.imgur.com/WHckefM.jpg")
+    postMessage("https://cdn.meme.am/instances/400x/58337600.jpg")
     this.res.end();
     }     
   else if(request.text && botRegexSiege.test(request.text)) {
