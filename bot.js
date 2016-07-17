@@ -97,7 +97,7 @@ function respond() {
   }
   else if(request.text && botRegextrades.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://docs.google.com/spreadsheets/d/1h2vHYSGyoGtdtm0WSavIePm_IGjONvigvCK558BQuak/edit#gid=355701355");
+    postMessage("https://docs.google.com/spreadsheets/d/1vvqtf-pZS-ggAY3cmz-cBvQYGlio2V_JX9pRE4oFQGs/edit#gid=726507916");
     this.res.end();
   }
   else if(request.text && botRegexFats.test(request.text)) {
@@ -117,7 +117,7 @@ function respond() {
   }
   else if(request.text && botRegexProp.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://goo.gl/forms/venTnLQVvyA51CZ92");
+    postMessage("http://goo.gl/forms/C9vxXnr2mSd7DrQe2");
     this.res.end();
   }
     else if(request.text && botRegexRec.test(request.text)) {
