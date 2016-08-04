@@ -117,7 +117,7 @@ function respond() {
   }
   else if(request.text && botRegexProp.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://goo.gl/forms/P5aXuUcgZkknUTlr2");
+    postMessage("https://media-mediatemple.netdna-ssl.com/wp-content/uploads/2014/05/00_closed-large.png");
     this.res.end();
   }
     else if(request.text && botRegexRec.test(request.text)) {
