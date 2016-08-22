@@ -238,7 +238,7 @@ function respond() {
    }   
     else if(request.text && botRegexVote.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://goo.gl/forms/6zMWpoBQC3znNXG03");
+    postMessage("https://goo.gl/forms/eGJbPCrhCHIeboW03");
     this.res.end();
    }       
     else if(request.text && botRegexAnyway.test(request.text)) {
