@@ -224,7 +224,7 @@ function respond() {
    }    
     else if(request.text && botRegexDalt.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://images.mentalfloss.com/sites/default/files/road_house.jpg");
+    postMessage("http://i.imgur.com/zwcbYRB.jpg");
     this.res.end();
    }      
     else if(request.text && botRegexFat.test(request.text)) {
