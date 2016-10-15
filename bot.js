@@ -329,7 +329,7 @@ function respond() {
     }          
     else if(request.text && botRegexTemp.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://www.fftoday.com/nfl/schedule.php")
+    postMessage("https://docs.google.com/spreadsheets/d/1JQW0NoK433TuALlx2xpf2648RVNkTnR4I7DRxDd5CcQ/edit#gid=0")
     this.res.end();
     }      
   else if(request.text && botRegexSiege.test(request.text)) {
