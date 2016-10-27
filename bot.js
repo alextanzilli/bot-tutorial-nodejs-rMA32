@@ -26,7 +26,7 @@ function respond() {
                 "MIA","BUF","SF","WAS","NYJ","TB"]
   if(request.text && botRegexmfl.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://daddyleagues.com/MFLPA");
+    postMessage("https://docs.google.com/spreadsheets/d/1yrYajVQDuf-TjSDCUZ3l4fvhap3YHiXeMVsaFLUilOc/edit?usp=sharing");
     this.res.end();
   } 
   else if(request.text && botRegexDL.test(request.text)) {
