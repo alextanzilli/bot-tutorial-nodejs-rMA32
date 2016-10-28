@@ -329,7 +329,7 @@ function respond() {
     }          
     else if(request.text && botRegexTemp.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://docs.google.com/spreadsheets/d/1yrYajVQDuf-TjSDCUZ3l4fvhap3YHiXeMVsaFLUilOc/edit?usp=sharing")
+    postMessage("https://docs.google.com/spreadsheets/d/1yrYajVQDuf-TjSDCUZ3l4fvhap3YHiXeMVsaFLUilOc/edit#gid=1029800088")
     this.res.end();
     }   
      else if(request.text && botRegexBF.test(request.text)) {
