@@ -119,7 +119,7 @@ function respond() {
   }
   else if(request.text && botRegexProp.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://goo.gl/forms/6u6kHlJegvZbWYqG3");
+    postMessage("http://www.clipartkid.com/images/526/sorry-we-are-closed-vinyl-wall-sticker-in-red-color-MZfKY4-clipart.jpg");
     this.res.end();
   }
     else if(request.text && botRegexRec.test(request.text)) {
