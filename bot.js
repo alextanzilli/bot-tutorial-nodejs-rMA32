@@ -284,7 +284,7 @@ function respond() {
     }    
       else if(request.text && botRegexRock.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://www.safetysign.com/images/source/large-images/R5335.20161030.png")
+    postMessage("https://goo.gl/forms/cy2I05dlK2jImfu73")
     this.res.end();
     }      
     else if(request.text && botRegexStats.test(request.text)) {
