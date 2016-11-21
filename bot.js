@@ -17,7 +17,7 @@ function respond() {
       botRegexRoar = /^\/roar/; botRegexRespek = /^\/respek/; botRegexFM = /^\/fuckmoney/; botRegexBob = /^\/bobsanders/; botRegexGolf = /^\/golf/;
       botRegexRock = /^\/rockthevote/; botRegexStats = /^\/stats/; botRegexEric = /^\/eric/; botRegexBrain = /^\/brain/; botRegexReject = /^\/rejected/;
       botRegexSch = /^\/sch/; botRegexGreat = /^\/greatness/; botRegexGoat2 = /^\/goatest/; botRegexCardz = /^\/(.*cardz)(\s+.*)/;
-      botRegexTemp = /^\/nfl/; botRegexBF = /^\/battlefield/; 
+      botRegexTemp = /^\/nfl/; botRegexComm = /^\/comm/;
       botRegexSiege = /^\/siege/;
       siege1 = 'https://i.groupme.com/350x419.png.adc8c73a6c1547e0a9e04320296329f8'; siege2 = 'https://i.groupme.com/1279x752.jpeg.aa5d0401e0df495bba4b4e09dc5a6bd7'
       siege3 = 'https://i.groupme.com/960x960.png.006e180e05d841c6a2962e844bf1e6fd';
@@ -332,9 +332,9 @@ function respond() {
     postMessage("https://docs.google.com/spreadsheets/d/1yrYajVQDuf-TjSDCUZ3l4fvhap3YHiXeMVsaFLUilOc/edit#gid=1029800088")
     this.res.end();
     }   
-     else if(request.text && botRegexBF.test(request.text)) {
+     else if(request.text && botRegexComm.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://i3.kym-cdn.com/photos/images/original/000/210/690/battlefield_3_vs_pike.jpg")
+    postMessage(“https://docs.google.com/forms/d/e/1FAIpQLSe5x39DhCZiaB12o8utZ4vHMiSldJPk2D2lHvIPPSuQFIssRA/viewform?c=0&w=1”)
     this.res.end();
     }  
   else if(request.text && botRegexSiege.test(request.text)) {
