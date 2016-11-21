@@ -322,7 +322,7 @@ function respond() {
     postMessage("https://media0.giphy.com/media/pnMm35fFjw16U/giphy.gif")
     this.res.end();
     }         
-      else if(request.text && botRegexCardz.test(request.text)) {
+    else if(request.text && botRegexCardz.test(request.text)) {
     this.res.writeHead(200);
     postMessage("http://www.directordealabanza.com/wp-content/uploads/2014/03/no.jpg")
     this.res.end();
@@ -332,7 +332,7 @@ function respond() {
     postMessage("https://docs.google.com/spreadsheets/d/1yrYajVQDuf-TjSDCUZ3l4fvhap3YHiXeMVsaFLUilOc/edit#gid=1029800088")
     this.res.end();
     }   
-     else if(request.text && botRegexComm.test(request.text)) {
+    else if(request.text && botRegexComm.test(request.text)) {
     this.res.writeHead(200);
     postMessage(“https://docs.google.com/forms/d/e/1FAIpQLSe5x39DhCZiaB12o8utZ4vHMiSldJPk2D2lHvIPPSuQFIssRA/viewform”)
     this.res.end();
