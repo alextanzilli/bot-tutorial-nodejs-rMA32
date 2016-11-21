@@ -334,7 +334,7 @@ function respond() {
     }   
      else if(request.text && botRegexComm.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://goo.gl/forms/PZJTJ2omFsASN1R92”)
+    postMessage(“https://docs.google.com/forms/d/e/1FAIpQLSe5x39DhCZiaB12o8utZ4vHMiSldJPk2D2lHvIPPSuQFIssRA/viewform”)
     this.res.end();
     }  
   else if(request.text && botRegexSiege.test(request.text)) {
