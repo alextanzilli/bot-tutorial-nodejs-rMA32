@@ -284,7 +284,7 @@ function respond() {
     }    
       else if(request.text && botRegexRock.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://goo.gl/forms/cy2I05dlK2jImfu73“,“https://goo.gl/forms/Y9bIllxY3e6JCSBj2”,“https://goo.gl/forms/JS1QUnVaIW2CVkhR2”)
+    postMessage("https://goo.gl/forms/cy2I05dlK2jImfu73”)
     this.res.end();
     }      
     else if(request.text && botRegexStats.test(request.text)) {
