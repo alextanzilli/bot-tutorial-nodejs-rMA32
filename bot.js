@@ -119,7 +119,7 @@ function respond() {
   }
   else if(request.text && botRegexProp.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://myparktheatre.com/wp-content/uploads/2013/09/sorryweareclosed.jpg");
+    postMessage("https://goo.gl/forms/PjC1gkUwcg7bPfpN2");
     this.res.end();
   }
     else if(request.text && botRegexRec.test(request.text)) {
