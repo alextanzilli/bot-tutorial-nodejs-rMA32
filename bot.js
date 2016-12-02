@@ -5,7 +5,7 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegexmfl = /^\/mflpa/;  botRegexDL = /^\/DDL/i; botRegexSalt = /^\/salt/; botRegexRules = /^\/rules/
+      botRegexmfl = /^\/mflpa/;  botRegexmflback = /^\/backup/; botRegexDL = /^\/DDL/i; botRegexSalt = /^\/salt/; botRegexRules = /^\/rules/
       botRegexAd=/^\/vance/; botRegexGTA = /^\/gta/; botRegexsdl = /^\/sdl/i; botRegexODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexporp = /^\/purpose/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegextrades = /^\/trades/; botRegexFats = /^\/404/; botRegexWAT = /^\/wat/;
       botRegexPurp = /^\/porpoise/; botRegexProp = /^\/propose/; botRegexRec = /^\/records/; botRegexMacho = /^\/machoman/;
@@ -26,12 +26,17 @@ function respond() {
                 "MIA","BUF","SF","WAS","NYJ","TB"]
   if(request.text && botRegexmfl.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://docs.google.com/spreadsheets/d/1yrYajVQDuf-TjSDCUZ3l4fvhap3YHiXeMVsaFLUilOc/edit?usp=sharing");
+    postMessage("http://daddyleagues.com/MFL");
+    this.res.end();
+  } 
+  else if(request.text && botRegexmflback.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://docs.google.com/spreadsheets/d/1yrYajVQDuf-TjSDCUZ3l4fvhap3YHiXeMVsaFLUilOc/edit#gid=2061155915");
     this.res.end();
   } 
   else if(request.text && botRegexDL.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://daddyleagues.com/MFLPA/team/"+request.text.substring(5,8)+"/depthchart");
+    postMessage("http://daddyleagues.com/MFL/team/"+request.text.substring(5,8)+"/depthchart");
     this.res.end();
   } 
   else if(request.text && botRegexSalt.test(request.text)) {
@@ -56,14 +61,14 @@ function respond() {
   } 
   else if(request.text && botRegexsdl.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://daddyleagues.com/MFLPA/team/"+request.text.substring(5,8)+"/schedule");
+    postMessage("http://daddyleagues.com/MFL/team/"+request.text.substring(5,8)+"/schedule");
     this.res.end();
   }
   else if(request.text && botRegexP.test(request.text)) {
     this.res.writeHead(200);
     var req = request.text.substring(5,request.text.length);
     var rep = req.replace(/ /,"+");
-    postMessage("http://daddyleagues.com/MFLPA/players?name="+rep+"&position=all&team=all");
+    postMessage("http://daddyleagues.com/MFL/players?name="+rep+"&position=all&team=all");
     this.res.end();
   }  
 
@@ -124,7 +129,7 @@ function respond() {
   }
     else if(request.text && botRegexRec.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://www.daddyleagues.com/MFLPA/stats/career");
+    postMessage("https://www.daddyleagues.com/MFL/stats/career");
     this.res.end();
   }
     else if(request.text && botRegexMacho.test(request.text)) {
@@ -169,7 +174,7 @@ function respond() {
   }    
     else if(request.text && botRegexStand.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://daddyleagues.com/mflpa/standings");
+    postMessage("http://daddyleagues.com/mfl/standings");
     this.res.end();
   }      
     else if(request.text && botRegexCarlos.test(request.text)) {
@@ -274,7 +279,7 @@ function respond() {
     }
     else if(request.text && botRegexBob.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://daddyleagues.com/mflpa/players?name=&position=all&team=all&injured=1")
+    postMessage("http://daddyleagues.com/mfl/players?name=&position=all&team=all&injured=1")
     this.res.end();
     }
     else if(request.text && botRegexGolf.test(request.text)) {
@@ -289,7 +294,7 @@ function respond() {
     }      
     else if(request.text && botRegexStats.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://daddyleagues.com/mflpa/stats/player")
+    postMessage("http://daddyleagues.com/mfl/stats/player")
     this.res.end();
     }     
       else if(request.text && botRegexEric.test(request.text)) {
