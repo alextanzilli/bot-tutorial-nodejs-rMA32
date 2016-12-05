@@ -144,7 +144,7 @@ function respond() {
   }
     else if(request.text && botRegexTony.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://kingrichiespizza.com/wp-content/uploads/2014/05/Pepperoni1.jpg");
+    postMessage("https://ih0.redbubble.net/image.14927358.8945/raf,750x1000,075,t,fafafa:ca443f4786.u1.jpg");
     this.res.end();
   }
     else if(request.text && botRegexDiv.test(request.text)) {
