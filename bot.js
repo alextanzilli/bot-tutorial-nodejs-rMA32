@@ -219,7 +219,7 @@ function respond() {
    }
     else if(request.text && botRegexDerr.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("/tony");
+    postMessage("https://media0.giphy.com/media/l9zb6hrVtkaDm/giphy.gif");
     this.res.end();
    } 
     else if(request.text && botRegexKerm.test(request.text)) {
