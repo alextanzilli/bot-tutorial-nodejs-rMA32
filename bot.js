@@ -332,16 +332,6 @@ function respond() {
     postMessage("http://www.directordealabanza.com/wp-content/uploads/2014/03/no.jpg")
     this.res.end();
     }          
-    else if(request.text && botRegexTemp.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("https://docs.google.com/spreadsheets/d/1yrYajVQDuf-TjSDCUZ3l4fvhap3YHiXeMVsaFLUilOc/edit#gid=1029800088")
-    this.res.end();
-    }   
-     else if(request.text && botRegexBF.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("http://i3.kym-cdn.com/photos/images/original/000/210/690/battlefield_3_vs_pike.jpg")
-    this.res.end();
-    }  
   else if(request.text && botRegexSiege.test(request.text)) {
     this.res.writeHead(200);
     if(0.6 >= Math.random() > 0.3)
