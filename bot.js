@@ -16,7 +16,7 @@ function respond() {
       botRegexPreach = /^\/preach/; botRegexVote = /^\/vote/; botRegexAnyway = /^\/anyway/; botRegexFif = /^\/fif/; botRegexGood = /^\/goodell/;
       botRegexRoar = /^\/roar/; botRegexRespek = /^\/respek/; botRegexFM = /^\/fuckmoney/; botRegexBob = /^\/bobsanders/; botRegexGolf = /^\/golf/;
       botRegexRock = /^\/rockthevote/; botRegexStats = /^\/stats/; botRegexEric = /^\/eric/; botRegexBrain = /^\/brain/; botRegexReject = /^\/rejected/;
-      botRegexSch = /^\/sch/; botRegexGreat = /^\/greatness/; botRegexGoat2 = /^\/goatest/; botRegexCardz = /^\/(.*cardz)(\s+.*)/;
+      botRegexSch = /^\/sch/; botRegexGreat = /^\/greatness/; botRegexGoat2 = /^\/goatest/; 
       botRegexTemp = /^\/nfl/; botRegexBF = /^\/battlefield/; botRegexCH = /^\/cheese/;
       botRegexSiege = /^\/siege/;
       siege1 = 'https://i.groupme.com/350x419.png.adc8c73a6c1547e0a9e04320296329f8'; siege2 = 'https://i.groupme.com/1279x752.jpeg.aa5d0401e0df495bba4b4e09dc5a6bd7'
@@ -326,12 +326,7 @@ function respond() {
     this.res.writeHead(200);
     postMessage("https://media0.giphy.com/media/pnMm35fFjw16U/giphy.gif")
     this.res.end();
-    }         
-      else if(request.text && botRegexCardz.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("http://www.directordealabanza.com/wp-content/uploads/2014/03/no.jpg")
-    this.res.end();
-    }          
+    }       
     else if(request.text && botRegexTemp.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://docs.google.com/spreadsheets/d/1yrYajVQDuf-TjSDCUZ3l4fvhap3YHiXeMVsaFLUilOc/edit#gid=1029800088")
