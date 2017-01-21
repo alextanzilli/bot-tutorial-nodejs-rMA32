@@ -16,8 +16,7 @@ function respond() {
       botRegexPreach = /^\/preach/; botRegexVote = /^\/vote/; botRegexAnyway = /^\/anyway/; botRegexFif = /^\/fif/; botRegexGood = /^\/goodell/;
       botRegexRoar = /^\/roar/; botRegexRespek = /^\/respek/; botRegexFM = /^\/fuckmoney/; botRegexBob = /^\/bobsanders/; botRegexGolf = /^\/golf/;
       botRegexRock = /^\/rockthevote/; botRegexStats = /^\/stats/; botRegexEric = /^\/eric/; botRegexBrain = /^\/brain/; botRegexReject = /^\/rejected/;
-      botRegexSch = /^\/sch/; botRegexGreat = /^\/greatness/; botRegexGoat2 = /^\/goatest/; 
-      botRegexTemp = /^\/nfl/; botRegexBF = /^\/battlefield/; botRegexCH = /^\/cheese/;
+      botRegexSch = /^\/sch/; botRegexGreat = /^\/greatness/; botRegexCh = /^\/cheese/;
       botRegexSiege = /^\/siege/;
       siege1 = 'https://i.groupme.com/350x419.png.adc8c73a6c1547e0a9e04320296329f8'; siege2 = 'https://i.groupme.com/1279x752.jpeg.aa5d0401e0df495bba4b4e09dc5a6bd7'
       siege3 = 'https://i.groupme.com/960x960.png.006e180e05d841c6a2962e844bf1e6fd';
@@ -322,27 +321,13 @@ function respond() {
     postMessage("http://i.imgur.com/1GKKJi0.jpg")
     this.res.end();
     }       
-      else if(request.text && botRegexGoat2.test(request.text)) {
+      else if(request.text && botRegexCh.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://media0.giphy.com/media/pnMm35fFjw16U/giphy.gif")
+    postMessage(“/tony“)
     this.res.end();
     }       
-    else if(request.text && botRegexTemp.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("https://docs.google.com/spreadsheets/d/1yrYajVQDuf-TjSDCUZ3l4fvhap3YHiXeMVsaFLUilOc/edit#gid=1029800088")
-    this.res.end();
-    }   
-     else if(request.text && botRegexBF.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("http://i3.kym-cdn.com/photos/images/original/000/210/690/battlefield_3_vs_pike.jpg")
-    this.res.end();
-    }  
-    else if(request.text && botRegexCH.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage(“/tony”)
-    this.res.end();
-    }  
-  else if(request.text && botRegexSiege.test(request.text)) {
+
+   else if(request.text && botRegexSiege.test(request.text)) {
     this.res.writeHead(200);
     if(0.6 >= Math.random() > 0.3)
       postMessage(siege1);
