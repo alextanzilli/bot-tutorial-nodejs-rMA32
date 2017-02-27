@@ -228,7 +228,7 @@ function respond() {
    }    
     else if(request.text && botRegexDalt.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://i.imgur.com/zwcbYRB.jpg");
+    postMessage("http://digitalspyuk.cdnds.net/12/46/480x340/gallery_wenn1782391.jpg");
     this.res.end();
    }      
     else if(request.text && botRegexFat.test(request.text)) {
