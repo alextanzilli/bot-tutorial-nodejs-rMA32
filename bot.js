@@ -13,7 +13,7 @@ function respond() {
       botRegex420 = /^\/420/; botRegexHuh = /^\/huh/; botRegexStand = /^\/standings/; botRegexCarlos = /^\/carlos/; botRegexDET = /^\/detroitpride/;
       botRegexAss = /^\/assemble/; botRegexDD = /^\/dd/; botRegexSIM = /^\/sim/; botRegexFuck = /^\/fuck/; botRegexSnap = /^\/snap/;
       botRegexToby = /^\/toby/; botRegexDerr = /^\/derrick/; botRegexKerm = /^\/kermit/; botRegexDalt = /^\/dalton/; botRegexFat = /^\/fatty/;
-      botRegexPreach = /^\/preach/; botRegexVote = /^\/vote/; botRegexAnyway = /^\/anyway/; botRegexFif = /^\/fif/; botRegexGood = /^\/goodell/;
+      botRegexPreach = /^\/preach/; botRegexVote = /^\/vote/; botRegexAnyway = /^\/anyway/; 
       botRegexRoar = /^\/roar/; botRegexRespek = /^\/respek/; botRegexFM = /^\/fuckmoney/; botRegexBob = /^\/bobsanders/; botRegexGolf = /^\/golf/;
       botRegexRock = /^\/rockthevote/; botRegexStats = /^\/stats/; botRegexEric = /^\/eric/; botRegexBrain = /^\/brain/; botRegexReject = /^\/rejected/;
       botRegexSch = /^\/sch/; botRegexGreat = /^\/greatness/; botRegexGoat2 = /^\/goatest/; botRegexCardz = /^\/(.*cardz)(\s+.*)/; botRegexRecon = /^\/recon/;
@@ -251,16 +251,6 @@ function respond() {
     postMessage("http://uk.dice.com/technews/wp-content/uploads/2014/12/Moving-on-When-is-the-Right-Time-1.jpg");
     this.res.end();
    }         
-    else if(request.text && botRegexFif.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("https://500daysasunder.files.wordpress.com/2013/01/screen-shot-2013-01-15-at-1-57-15-am.png");
-    this.res.end();
-   }     
-    else if(request.text && botRegexGood.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("https://jeffwinbush.files.wordpress.com/2015/07/bradys-soft-balls.png");
-    this.res.end();
-   }     
     else if(request.text && botRegexRoar.test(request.text)) {
     this.res.writeHead(200);
     postMessage("http://www.blackenterprise.com/wp-content/blogs.dir/1/files/2012/10/Woods.jpg");
