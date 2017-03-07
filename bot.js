@@ -148,7 +148,7 @@ function respond() {
   }
     else if(request.text && botRegexDiv.test(request.text)) {
     this.res.writeHead(200);
-    postMessage(“/recon“);
+    postMessage("/recon");
     this.res.end();
   }  
     else if(request.text && botRegexJpg.test(request.text)) {
