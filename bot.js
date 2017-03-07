@@ -17,6 +17,7 @@ function respond() {
       botRegexRoar = /^\/roar/; botRegexRespek = /^\/respek/; botRegexFM = /^\/fuckmoney/; botRegexBob = /^\/bobsanders/; botRegexGolf = /^\/golf/;
       botRegexRock = /^\/rockthevote/; botRegexStats = /^\/stats/; botRegexEric = /^\/eric/; botRegexBrain = /^\/brain/; botRegexReject = /^\/rejected/;
       botRegexSch = /^\/sch/; botRegexGreat = /^\/greatness/; botRegexGoat2 = /^\/goatest/; botRegexCardz = /^\/(.*cardz)(\s+.*)/; botRegexRecon = /^\/recon/;
+      botRegexDes = /^\/descius/; 
       botRegexSiege = /^\/siege/;
       siege1 = 'https://i.groupme.com/350x419.png.adc8c73a6c1547e0a9e04320296329f8'; siege2 = 'https://i.groupme.com/1279x752.jpeg.aa5d0401e0df495bba4b4e09dc5a6bd7'
       siege3 = 'https://i.groupme.com/960x960.png.006e180e05d841c6a2962e844bf1e6fd';
@@ -324,6 +325,11 @@ function respond() {
       else if(request.text && botRegexRecon.test(request.text)) {
     this.res.writeHead(200);
     postMessage("http://assets1.ignimgs.com/2015/06/15/ghostrecon051280jpg-a575ff_1280w.jpg")
+    this.res.end();
+    }   
+      else if(request.text && botRegexDes.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://www.askideas.com/media/12/Angry-Man-Says-Shut-Up-Fool.png")
     this.res.end();
     }   
   else if(request.text && botRegexSiege.test(request.text)) {
