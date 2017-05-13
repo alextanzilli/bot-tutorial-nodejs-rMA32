@@ -8,7 +8,7 @@ function respond() {
       botRegexmfl = /^\/mfl/;  botRegexmflback = /^\/backup/; botRegexDL = /^\/DDL/i; botRegexSalt = /^\/salt/; botRegexRules = /^\/rules/
       botRegexAd=/^\/vance/; botRegexGTA = /^\/gta/; botRegexsdl = /^\/sdl/i; botRegexODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexporp = /^\/purpose/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegextrades = /^\/trades/; botRegexFats = /^\/404/; botRegexWAT = /^\/wat/;
-      botRegexPurp = /^\/porpoise/; botRegexProp = /^\/propose/; botRegexRec = /^\/records/; botRegexMacho = /^\/machoman/;
+      botRegexPurp = /^\/porpoise/; botRegexProp = /^\/propose/; botRegexRec = /^\/records/; botRegexUpdate = /^\/update/;
       botRegexDuck2 = /^\/ducking/; botRegexTony = /^\/tony/; botRegexDiv = /^\/division/; botRegexJpg = /^\/jpeg/; botRegexGoat = /^\/goat/;
       botRegex420 = /^\/420/; botRegexHuh = /^\/huh/; botRegexStand = /^\/standings/; botRegexCarlos = /^\/carlos/; botRegexDET = /^\/detroitpride/;
       botRegexAss = /^\/assemble/; botRegexDD = /^\/dd/; botRegexSIM = /^\/sim/; botRegexFuck = /^\/fuck/; botRegexSnap = /^\/snap/;
@@ -132,9 +132,9 @@ function respond() {
     postMessage("https://www.daddyleagues.com/MFL/stats/career");
     this.res.end();
   }
-    else if(request.text && botRegexMacho.test(request.text)) {
+    else if(request.text && botRegexUpdate.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://www.prowrestlingtees.com/media/catalog/product/cache/1/image/800x800/9df78eab33525d08d6e5fb8d27136e95/m/a/machoman1037_1.png");
+    postMessage("http://i.imgur.com/ImPKoqB.jpg");
     this.res.end();
   }
     else if(request.text && botRegexDuck2.test(request.text)) {
