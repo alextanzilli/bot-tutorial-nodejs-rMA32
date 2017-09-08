@@ -104,7 +104,7 @@ function respond() {
   }
   else if(request.text && botRegextrades.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://docs.google.com/spreadsheets/d/1Jf__XBAxnpj9zqt3uJA5QAKv7taKyGXctWeOR0VdnuU/edit#gid=321774715");
+    postMessage("https://docs.google.com/spreadsheets/d/1OUQwzq1jgVKfeOQkxmrEE7-uMjpcf-KFGErVeklJWPk/edit#gid=130074851");
     this.res.end();
   }
   else if(request.text && botRegexFats.test(request.text)) {
