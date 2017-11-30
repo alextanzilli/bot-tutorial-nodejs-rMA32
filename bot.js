@@ -99,7 +99,7 @@ function respond() {
   } 
   else if(request.text && botDuck.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://media3.giphy.com/media/YCseTHF2I6CCA/giphy.gif");
+    postMessage("https://media0dk-a.akamaihd.net/91/20/3ef3a4ddcc52cfb34e5b19671a7ce18a.jpg");
     this.res.end();
   }
   else if(request.text && botRegextrades.test(request.text)) {
