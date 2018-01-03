@@ -46,7 +46,7 @@ function respond() {
   } 
   else if(request.text && botRegexAd.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://cdn1.theodysseyonline.com/files/2016/02/20/635915966979689414-1281759650_vance.png");
+    postMessage("https://i.imgflip.com/221f1p.jpg");
     this.res.end();
   }
   else if(request.text && botRegexRules.test(request.text)) {
