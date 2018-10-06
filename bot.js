@@ -299,7 +299,7 @@ function respond() {
     }      
     else if(request.text && botRegexReject.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://cmgajcpolitics.files.wordpress.com/2014/04/mutombo.jpg")
+    postMessage("https://media.giphy.com/media/NvQrY1XGKfJok/giphy.gif")
     this.res.end();
     }   
     else if(request.text && botRegexSch.test(request.text)) {
