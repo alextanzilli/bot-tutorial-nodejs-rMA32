@@ -46,7 +46,7 @@ function respond() {
   } 
   else if(request.text && botRegexAd.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://www.theofficequotes.com/images/scranton-business-park/vance.png");
+    postMessage("https://imgur.com/n3H3c0f");
     this.res.end();
   }
   else if(request.text && botRegexRules.test(request.text)) {
