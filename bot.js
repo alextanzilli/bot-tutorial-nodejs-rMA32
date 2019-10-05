@@ -324,7 +324,7 @@ function respond() {
     }          
       else if(request.text && botRegexRecon.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://assets1.ignimgs.com/2015/06/15/ghostrecon051280jpg-a575ff_1280w.jpg")
+    postMessage("https://imgur.com/5AStTXl")
     this.res.end();
     }   
       else if(request.text && botRegexDes.test(request.text)) {
