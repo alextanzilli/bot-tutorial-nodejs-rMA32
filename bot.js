@@ -124,7 +124,7 @@ function respond() {
   }
   else if(request.text && botRegexProp.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://goo.gl/forms/EFFdxEGLY8sBjGEE3");
+    postMessage("https://forms.gle/cwEA3xdmmoWh5SQ96");
     this.res.end();
   }
     else if(request.text && botRegexRec.test(request.text)) {
