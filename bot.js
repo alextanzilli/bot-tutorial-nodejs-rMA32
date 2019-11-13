@@ -5,9 +5,9 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegexmfl = /^\/mfl/;  botRegexmflback = /^\/backup/; botRegexDL = /^\/DDL/i; botRegexSalt = /^\/salt/; botRegexRules = /^\/rules/
-      botRegexAd=/^\/vance/; botRegexGTA = /^\/gta/; botRegexsdl = /^\/sdl/i; botRegexODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
-      botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexporp = /^\/purpose/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegextrades = /^\/trades/; botRegexFats = /^\/404/; botRegexWAT = /^\/wat/;
+      botRegexmfl = /^\/mfl/;  botRegexDL = /^\/DDL/i; botRegexSalt = /^\/salt/; botRegexRules = /^\/rules/
+      botRegexAd=/^\/vance/; botRegexGTA = /^\/gta/; botRegexsdl = /^\/sdl/i; botDuck = /^\/duck/;
+      botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexMixer = /^\/mixer/i; botRegexporp = /^\/purpose/; botRegexWk = /^\/users/; botRegextrades = /^\/trades/; botRegexFats = /^\/404/; botRegexWAT = /^\/wat/;
       botRegexPurp = /^\/porpoise/; botRegexProp = /^\/propose/; botRegexRec = /^\/records/; botRegexUpdate = /^\/update/;
       botRegexDuck2 = /^\/ducking/; botRegexTony = /^\/tony/; botRegexDiv = /^\/division/; botRegexJpg = /^\/jpeg/; botRegexGoat = /^\/goat/;
       botRegex420 = /^\/420/; botRegexHuh = /^\/huh/; botRegexStand = /^\/standings/; botRegexCarlos = /^\/carlos/; botRegexDET = /^\/detroitpride/;
@@ -27,11 +27,6 @@ function respond() {
   if(request.text && botRegexmfl.test(request.text)) {
     this.res.writeHead(200);
     postMessage("http://daddyleagues.com/MFL");
-    this.res.end();
-  } 
-  else if(request.text && botRegexmflback.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("https://docs.google.com/spreadsheets/d/1yrYajVQDuf-TjSDCUZ3l4fvhap3YHiXeMVsaFLUilOc/edit#gid=2061155915");
     this.res.end();
   } 
   else if(request.text && botRegexDL.test(request.text)) {
@@ -71,20 +66,19 @@ function respond() {
     postMessage("http://daddyleagues.com/MFL/players?name="+rep+"&position=all&team=all");
     this.res.end();
   }  
-
   else if(request.text && botRegexTw.test(request.text)) {
     this.res.writeHead(200);
     postMessage("http://www.twitch.tv/"+request.text.substring(8,request.text.length));
     this.res.end();
   } 
+  else if(request.text && botRegexMixer.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://www.mixer.com/"+request.text.substring(8,request.text.length));
+    this.res.end();
+  } 
   else if(request.text && botRegexporp.test(request.text)) {
     this.res.writeHead(200);
     postMessage("http://assets.worldwildlife.org/photos/7505/images/story_full_width/Wang_Xiaoqiang_(IHB).jpg?1412017255");
-    this.res.end();
-  } 
-  else if(request.text && botRegexSh.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("http://media.philly.com/images/092713_shrug_600.jpg");
     this.res.end();
   } 
   else if(request.text && botRegexWk.test(request.text)) {
