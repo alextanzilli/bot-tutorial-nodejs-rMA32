@@ -93,7 +93,7 @@ function respond() {
   }
   else if(request.text && botRegextrades.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://docs.google.com/spreadsheets/d/1ozYieBbkLrs5ZWwECN_3wJEHPRYll8wrQ6L1cF6Mg6Y/edit#gid=1060615286");
+    postMessage("https://docs.google.com/spreadsheets/d/1ozYieBbkLrs5ZWwECN_3wJEHPRYll8wrQ6L1cF6Mg6Y/edit#gid=2109135006");
     this.res.end();
   }
   else if(request.text && botRegexFats.test(request.text)) {
